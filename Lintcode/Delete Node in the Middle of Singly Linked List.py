@@ -11,10 +11,5 @@ class Solution:
     # @return: nothing
     def deleteNode(self, node):
         # write your code here
-        if node == None:
-            return
-        elif node.next == None:
-            return
-        else:
-            node.val = node.next.val
-            node.next = node.next.next
+        node.val = node.next.val
+        node.next = node.next.next
